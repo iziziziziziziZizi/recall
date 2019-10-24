@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width:auto;
+	margin:0 auto;
+}
+
+/*头部*/
+#head{
+	width:800px;
+	height:200px;
+	margin:0 auto;
+	margin-bottom:24px;
+}
+/*发生活圈的div*/
+#release_form{
+	margin-top:15px;
+	padding:10px 0 0 10px;;
+	float:left;
+	width:65.5%;
+	height:190px;
+	background:#ECECEC;
+}
+/*发生活圈的标题*/
+#release_form p{
+	 padding-bottom:2px;
+	 margin:0px;
+	 font-family:"楷体";
+	 font-size:18px;
+}
+
+/*发生活圈的限制字数*/
+#release_form #content_size{
+	padding-right:14px;
+	float:right;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+#release_form #content_size input{
+	border:0px;
+	width:25px;
+	background-color:#ECECEC;
+}
+/*发生活圈的文本框*/
+#release_form #release_form_content{
+	padding-bottom:7px;
+	resize:none;
+	width:97%;
+}
+/*发生活圈的发布按钮*/
+#release_form #button{
+	float:right;
+	font-size:16px;
+	color:#FFF;
+	border:0px;
+	background:#ebb270;
+	text-align:center;
+	padding-top:7px;
+	padding-bottom:7px;
+	width:80px;
+	margin-right:10px;
+}
+
+/*个人信息的显示*/
+#personal{
+	margin-top:15px;
+	float:right;
+	width:32%;
+	height:200px;
+	background:#ECECEC;
+}
+/*个人信息的上面的背景*/
+#personal_top{
+	width:100%;
+	height:45%;
+	background:#ECECEC;
+}
+/*个人信息的上面的背景图*/
+#personal_img_div{
+	width:100px;
+	text-align:center;
+}
+#personal_img{
+	margin-left:145px;
+	margin-top:-40px;
+	width:72px;
+	height:72px;
+	border:1px solid #CCC;
+	padding:2px;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+/*个人信息的用户名*/
+#personal #username{
+	margin-top:-43px;
+	font-size:20px;
+	float:right;
+	margin-right:120px;
+}
+
+/*个人信息的下面的关注，粉丝，生活圈*/
+#personal #personal_bottom{
+	width:100%;
+	height:65%;
+	margin:0 auto;
+}
+/*个人信息的下面的关注，粉丝，生活圈div*/
+#personal #personal_bottom div{
+	margin-top:-15px;
+	width:28%;
+	float:left;
+	text-align:center;
+	padding-bottom:3px;
+	cursor:pointer;
+	color:#999;
+}
+#personal #personal_bottom div:hover{
+	color:#039;
+}
+/*个人信息的下面的关注*/
+#personal #personal_bottom #attention{
+	margin-left:21px;
+}
+
+/*个人信息的下面的粉丝*/
+#personal #personal_bottom #fans{
+	border-left:1px solid #999;
+	border-right:1px solid  #999;
+}
+/*个人信息的下面的关注，粉丝，生活圈的数字*/
+#personal_bottom #mun{
+	font-size:24px;
+	font-weight:bold;
+}
+/*个人信息的下面的关注，粉丝，生活圈的字体*/
+#personal_bottom #text{
+	font-size:10px;
+}
+
+
+
+
+
+/*生活圈的显示*/
+#content_show{
+	width:800px;
+	margin:0 auto;
+	background-color:#ECECEC;
+}
+#content_show table{ margin:0 auto;width:760px;}
+#content_show td{border-bottom:1px solid #CCC;}
+/*发帖人的头像div*/
+#left{
+	width:100px;
+	text-align:center;
+	float:left;
+}
+/*发帖人的头像图片*/
+#user_img{
+	margin-top:3px;
+	width:72px;
+	height:72px;
+	border-radius:50%; 
+	overflow:hidden;
+	cursor:pointer;
+}
+/*生活圈的内容，姓名，操作div*/
+#right{
+	float:right;
+	width:640px;
+	padding-bottom:20px;
+}
+/*发帖人的姓名*/ 
+#right #username{
+	color:#000;
+	font-size:18px;
+	font-weight:bold;
+}
+#username:hover{
+	font-size:18px;
+	color:#039;
+	cursor:pointer;
+}
+/*生活圈的内容*/
+#right #content{
+	padding-right:45px;
+}
+/*生活圈的图片显示*/	
+#right #personal_image{
+	margin-top:10px;
+	width:290px;
+	height:350px;
+}
+/*发生活圈的时间*/
+#right #time{font-size:13px;color:#333;}
+/*回复生活圈的按钮*/
+#right #reply{font-size:14px;cursor:pointer; float:right;padding-right:15px;}
+#right #reply:hover{color:#F44; font-size:14px;}
+/*删除生活圈的按钮*/
+#right #delete{font-size:14px;cursor:pointer; float:right;padding-right:15px;}
+#right #delete:hover{color:#F44; font-size:14px;}
+
+
+/*回复框*/
+.all_reply_form{
+	margin-top:15px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	background:#FFF;
+	display:none;
+	width:96%;
+}
+
+/*生活圈的id，隐藏起来，赋值为生活圈的id*/
+.all_reply_form #vitasphere_id{
+	display:none;
+}
+/*回复框的内容输入*/
+.all_reply_content{
+	width:75%;
+	height:25px;
+}
+/*回复框的按钮*/
+.all_reply_form #reply_button{
+	margin-right:15px;
+	height:29px;
+	background:#969;
+	border:0px;
+}
+
+	
+
+/*回复显示div*/
+#reply_content_show{
+	margin-top:10px;
+	margin-left:25px;
+	width:90%;
+	margin-top:5px;
+	padding-bottom:5px;
+	border-bottom:1px solid #CCC;
+
+}
+/*回复显示*/
+#reply_content{
+	padding-right:45px;
+	cursor:pointer;
+}
+#reply_content:hover{
+	padding-right:45px;
+	color:#666;
+	cursor:pointer;
+}
+
+/*第二个回复框*/
+.all_reply_form_two{
+	margin-right:15px;
+	margin-top:15px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	background:#FFF;
+	width:100%;
+	padding-right:15px;
+	display:none;
+	
+}
+.all_reply_form_two #vitasphere_id{
+	display:none;
+}
+.all_reply_form_two #byreply_name{
+	display:none;
+}
+.all_reply_form_two .content{
+	width:300px;
+	height:25px;
+}
+.all_reply_form_two #reply_button{
+	margin-right:15px;
+	height:29px;
+	background:#969;
+	border:0px;
+}
+
+
+/*分页*/
+#page{
+	margin:10px;
+	text-align:center;
+}
+/*分页中的a标签*/
+#page span a{
+	border:1px;
+	padding:4px 7px 4px 7px;
+	margin:1px;
+	color:#03C;
+	background:#a8abae;
+	text-decoration:none;
+}
+#page span a:hover{
+	border:1px;
+	padding:4px 7px 4px 7px;
+	margin:1px;
+	color:#F00;
+	background:#999;	
+}
+/*分页中的当前页码*/
+#page #page_show{
+	border:1px solid #3c4045;
+	padding:3px 6px 3px 6px;
+	margin:1px;
+	color:#F00;
+	background:#727577;	
+}
+/*分页中的不可点击页*/
+#page #page_lose a{
+	padding:4px 7px 4px 7px;
+	margin:1px;
+	color:#03C;
+	background:#ECECEC;	
+}
+
+	
+/*foot*/
+#foot{text-align:center;margin:0 auto;}
+#foot iframe{height:200px;width:100%;}
+	
+	

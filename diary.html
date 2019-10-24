@@ -1,0 +1,124 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>日记</title>
+<style type="text/css">
+body{
+	width:auto;
+	height:auto;
+	background:#FFF;
+}
+#infoblock{
+	margin:20px 0 0;	
+}
+#line{
+	border-color:#e6e6e6;
+	display:block;
+	padding:0 0 0 0px;
+	border-style:solid;
+	border-width:1px 0 0 0;
+}
+
+#btn{
+	float:right;
+	margin-top:-22px;
+	padding:4px 12px 4px 12px;
+	text-align:center;
+	border-width: 1px;
+    border-style: solid;
+    overflow:hidden;
+	vertical-align: middle;
+	cursor:pointer;
+	border-color:#CCC;
+	background:#CCC;
+	color:#000;
+    border-radius:13px;
+}
+#btn:hover{
+	background-color:#F93;
+	border-color:#F93;
+	color:#FFF;
+}
+ul{
+	display:block;
+	margin:0;
+	padding:8px 0;}
+ul li{
+	list-style:none;
+	line-height:20px;
+	display:-webkit-box;/* Safari 和 Chrome */
+	display:-moz-box;/* Firefox */
+	padding:8px 0;
+}
+ul li a{
+	font-size:16px;
+	list-style:none;
+	/*1.强制一横显示*/
+	white-space:nowrap;
+	/*2.多出的隐藏*/
+	overflow:hidden;
+	/*3.用省略号显示*/
+	text-overflow:ellipsis;
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	text-decoration:underline;}
+ul li:nth-child(2n+1){
+	background:#FCFCFC;}
+.list_tit{
+	-webkit-box-flex:1;
+	font-size:16px;
+	}
+.list_op{
+	text-align:right;
+	-webkit-box-flex:1;
+}
+span{
+	margin-right:5px;}
+</style>
+</head>
+
+<body onload="test()">
+<div id="infoblock">
+      <fieldset id="line">
+        <legend id="tit">日志</legend>
+        <input type="submit" value="写日志" id="btn">
+        <div id="content">
+        <ul>
+  			<li>
+            <div class="list_tit"><a href="#">艺术与设计学院举行“巨灵”奖学金签约仪式</a></div>
+            <div class="list_op"><span>"写作时间"</span>&nbsp;<span>编辑</span><span>删除</span></div>
+            </li>
+  			<li>
+            <div class="list_tit"><a href="#">艺术与设计学院举行“巨灵”奖学金签约仪式</a></div>
+            <div class="list_op"><span>"写作时间"</span>&nbsp;<span>编辑</span><span>删除</span></div>
+            </li>
+            <li>
+            <div class="list_tit"><a href="#">艺术与设计学院举行“巨灵”奖学金签约仪式</a></div>
+            <div class="list_op"><span>"写作时间"</span>&nbsp;<span>编辑</span><span>删除</span></div>
+            </li>
+            <li>
+            <div class="list_tit"><a href="#">艺术与设计学院举行“巨灵”奖学金签约仪式</a></div>
+            <div class="list_op"><span>"写作时间"</span>&nbsp;<span>编辑</span><span>删除</span></div>
+            </li>
+            <li>
+            <div class="list_tit"><a href="#">艺术与设计学院举行“巨灵”奖学金签约仪式</a></div>
+            <div class="list_op"><span>"写作时间"</span>&nbsp;<span>编辑</span><span>删除</span></div>
+            </li>
+		</ul>
+        </div>
+      </fieldset>
+   
+      
+</div>
+<script>
+function test(){
+	var iframe = parent.document.getElementById("Infol");	
+	iframe.height = 0;
+	iframe.height = document.body.scrollHeight;
+}
+</script>
+</body>
+</html>

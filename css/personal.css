@@ -1,0 +1,16 @@
+@charset "utf-8";
+body{
+	margin:0 auto;
+}
+/*头部*/
+#head{
+	width:800px;
+	height:400px;
+	background:#333;
+	margin:0 auto;
+}
+
+/*foot*/
+#foot{text-align:center;margin:0 auto;}
+#foot iframe{height:200px;width:100%;}
+	

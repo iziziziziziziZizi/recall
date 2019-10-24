@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录注册</title>
+<link rel="stylesheet" href="css/login.css"  type="text/css"/>
+</head>
+
+<body>
+<div class="Login">
+<h1>Login</h1>
+ <form action="login_action.php" method="post" onsubmit="return enter()">  
+        <input type="text" name="username" id="username" placeholder="Username"><br>
+        <input type="password" name="password" id="password"placeholder="Password"><br> 
+        <input type="submit" value="Sign me in" id="button">    
+        <input type="button" value="注册" id="button" onclick="register();">  
+  
+    </form>  
+  
+    <script type="text/javascript">  
+        function enter()  
+        {  
+            var username=document.getElementById("username").value;//获取form中的用户名  
+            var password=document.getElementById("password").value;  
+            var regex=/^[/s]+$/;//声明一个判断用户名前后是否有空格的正则表达式 
+            if(regex.test(username)||username.length==0)//判定用户名的是否前后有空格或者用户名是否为空  
+                {  
+                    alert("请输入用户名");  
+                    return false;  
+                }  
+            if(regex.test(password)||password.length==0)//同上述内容  
+            {  
+                alert("请输入密码");  
+                return false;  
+            }  
+            return true;  
+        }  
+        function register()  
+        {  
+            window.location.href="register.html";//跳转到注册页面  
+        }  
+    </script>  
+</div>
+</body>
+</html>

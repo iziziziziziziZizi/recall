@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>写日志</title>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;}
+.diary-write{
+	margin:20px 0 0 20px;
+}
+.title{
+	margin:0 auto;}
+.title input{
+	width:50%;
+	height:40px;
+	font-size:24px;
+	border:1px dashed #000000;
+	border-radius:5px;
+}
+#topbar{
+	border-color:#e6e6e6;
+	display:block;
+	padding:0 0 0 0px;
+	border-style:solid;
+	border-width:1px 0 0 0;
+	margin-top:20px;
+}
+label{}
+#btn{
+	text-decoration:none;
+	font-size:14px;
+	float:right;
+	margin-top:-16px;
+	padding:4px 12px 4px 12px;
+	text-align:center;
+	border-width: 1px;
+    border-style: solid;
+    overflow:hidden;
+	vertical-align: middle;
+	cursor:pointer;
+	border-color:#CCC;
+	background:#CCC;
+	color:#000;
+    border-radius:13px;
+}
+#btn:hover{
+	background-color:#F93;
+	border-color:#F93;
+	color:#FFF;
+}
+</style>
+</head>
+
+<body>
+<div class="diary-write">
+    <fieldset id="topbar">
+    	<label>写日志</label>
+        <input type="submit" value="发表" id="btn"/>
+    	<form>
+        	<div class="title">
+            <input type="text" name="title" placeholder="请在这里输入标题"/>
+            </div>
+            <div class="article">
+            <textarea name="article" id="diary_from_article" rows="20" cols="100"></textarea>
+            </div>
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>
